@@ -1,0 +1,157 @@
+.Contact{
+    padding: 0 0 18rem 0;
+    &__container{
+        .Title{
+            margin-bottom: 5rem;
+        }
+
+        &__content{
+            form {
+                max-width: 100rem;
+                margin: auto;
+            }
+            .form-group {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 6rem;
+                &__label{
+                    width: 30%;
+                    padding-right: 2rem;
+                    box-sizing: border-box;
+
+                }
+                &__input{
+                    width: 70%;
+                    display: flex;
+                    
+
+                }
+
+                &__textarea{
+                    align-items: flex-start;
+
+                    .form-group__label{
+                        margin-top: 1rem;
+                    }
+
+                    textarea{
+                        padding: 1rem 2rem;
+                        height: 25rem;
+                    }
+                }
+            }
+            label {
+                display: block;
+                font-weight: bold;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+                display: flex;
+                justify-content: space-between;
+                font-weight: 500;
+            }
+            .center{
+                padding-left: 2rem;
+            }
+            input[type="text"], input[type="email"],input[type="date"], select, textarea {
+                width: 100%;
+                padding: 8px;
+                margin-top: 5px;
+                box-sizing: border-box;
+                font-size: 2.4rem;
+                line-height: 2.4rem;
+                border: 1px solid #8B8B8B;
+                appearance: auto;
+                font-weight: 500;
+                padding: 1rem 2rem;
+
+           
+            }
+            input[type="radio"]{
+                appearance: auto;
+                width: 2rem;
+                height: 2rem;
+
+
+            }
+            input[type="date"]{
+                width: 30rem;
+                margin-right: 2rem;
+                border: 1px solid #8B8B8B;
+
+            }
+            select[name="first_choice_time"],
+            select[name="second_choice_time"],
+            select[name="third_choice_time"]{
+                width: 20rem;
+                display: block;
+                border: 1px solid #8B8B8B;
+
+
+            }
+            .required {
+                color: red;
+            }
+            .optional {
+                color: #5595BA;
+            }
+
+            .optional,.required{
+                font-size: 2.5rem;
+            }
+            .radio-group {
+                display: flex;
+                gap: 10px;
+                margin-top: 5px;
+            }
+            .submit-button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+            .submit-button:hover {
+                background-color: #45a049;
+            }
+
+            .Btn{
+                margin-top: 15rem;
+            }
+        }
+
+        &__box{
+            background-color: #F1EFE9;
+            padding: 3rem 12rem;
+            margin-top: 15rem;
+            &__inner{
+                position: relative;
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    // top: 50%;
+                    // left: 10px;
+                    bottom: 0;
+                    right: -6rem;
+                    // transform: translateY(-50%);
+                    width: 3.6rem;
+                    height: 2.8rem;
+                    // background-color: red;
+                    background: url(../images/policy_allow.png) no-repeat center/contain;
+                }
+                p{
+                    font-size: 2rem;
+                    line-height: 3rem;
+
+
+                }
+            }
+
+
+        }
+
+    }
+}

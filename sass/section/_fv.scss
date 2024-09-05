@@ -1,0 +1,27 @@
+.Fv{
+    margin-bottom: -0.2rem;
+    .Btn__01{
+        position: absolute;
+        right: 6rem;
+        top: 3rem;
+        a{
+            width: 30rem;
+            height: 7rem;
+            span{
+                line-height: 7rem;
+            }
+        }
+    }
+    img{
+        width: 100%;
+    }
+
+    position: relative;
+
+    .Btn__02{
+        position: absolute;
+        bottom: 5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

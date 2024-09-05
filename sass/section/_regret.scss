@@ -1,0 +1,72 @@
+.Regret{
+    background-color: #F1EFE9;
+    padding: 5rem 0 20rem 0;
+    position: relative;
+    
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        // top: 50%;
+        // left: 10px;
+        transform: translateX(-50%);
+        // width: 25px;
+        // height: 25px;
+        // background-color: red;
+        bottom: 0;
+        left: 50%;
+        width: 100%;
+        height: 20rem;
+        background: url(../images/white_tri.png) no-repeat center bottom/contain;
+    }
+    &__container{
+        padding-bottom: 10rem;
+        .Title{
+            margin-bottom: 8rem;
+        }
+        &__wrap{
+            display: flex;
+            .Item{
+                width: 33.33%;
+
+                &__title{
+                    // margin: 0 auto;
+                    text-align: center;
+                    margin-bottom: 4rem;
+                    span{
+                        font-size: 2.8rem;
+                        line-height: 4.1rem;
+                        font-weight: 500;
+                        text-align: center;
+                        background: linear-gradient(transparent 50%, rgba(#5595BA,0.6) 50%);
+                        display: inline-block;
+
+                    }
+                    
+
+                    
+
+                }
+                &__img{
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-bottom: 2rem;
+                    img{
+                        width: 100%;
+                    }
+
+                }
+                &__dis{
+                    font-size: 2.5rem;
+                    line-height: 4.1rem;
+                    letter-spacing: 0.08rem;
+                    font-weight: 400;
+                    text-align: center;
+
+                }
+
+            }
+
+        }
+    }
+}
