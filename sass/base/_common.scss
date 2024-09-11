@@ -101,12 +101,13 @@ html {
   // scroll-padding-top: 70px; /* 固定ヘッダの高さ分 */
   font-family: 'A P-OTF A1Gothic StdN', sans-serif;
 
-  font-size: 0.83333333333333vw;
+  font-size: 0.56333333333333vw;
+  // font-size: 0.6vw;
   // font-size: 0.869565217391304vw;
   // 計算式：　10(px) / 1200(px) * 100 = 0.83333333333333
 
   @include pc {
-    font-size: 10px;
+    // font-size: 10px;
   }
 
   @include sp {

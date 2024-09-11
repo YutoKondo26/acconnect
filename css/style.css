@@ -132,12 +132,7 @@ input, select {
 }
 html {
   font-family: "A P-OTF A1Gothic StdN", sans-serif;
-  font-size: 0.8333333333vw;
-}
-@media screen and (min-width: 1200px) {
-  html {
-    font-size: 10px;
-  }
+  font-size: 0.5633333333vw;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -203,7 +198,7 @@ body {
 .Btn p {
   color: #C3261D;
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 0.4rem;
   font-weight: 500;
 }
@@ -225,7 +220,7 @@ body {
 .Btn a span, .Btn button span {
   color: #fff;
   line-height: 8rem;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   position: relative;
 }
 .Btn a span::before, .Btn button span::before {
@@ -426,35 +421,76 @@ body {
   background: #333; /*ドットボタンの現在地表示の色*/
 }
 
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #F1EFE9;
+  width: 100%;
+}
+.Header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem;
+}
+.Header__container__logo {
+  width: 30rem;
+}
+.Header__container__logo img {
+  width: 100%;
+}
+.Header__container__btn .Btn__01 a {
+  width: 30rem;
+  height: 6rem;
+}
+.Header__container__btn .Btn__01 a span {
+  line-height: 6rem;
+}
+
 .Fv {
   margin-bottom: -0.2rem;
   position: relative;
+  background: url(../images/fv.jpg) no-repeat top center/cover;
+  height: 90vh;
+  position: relative;
 }
-.Fv .Btn__01 {
+.Fv::before {
+  content: "";
+  display: block;
   position: absolute;
-  right: 6rem;
-  top: 3rem;
-}
-.Fv .Btn__01 a {
-  width: 30rem;
-  height: 7rem;
-}
-.Fv .Btn__01 a span {
-  line-height: 7rem;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 20rem;
+  background: url(../images/gray_tri.png) no-repeat center bottom/contain;
 }
 .Fv img {
   width: 100%;
 }
+.Fv__text {
+  position: absolute;
+  left: 10rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35vw;
+}
+.Fv__text img {
+  width: 100%;
+}
 .Fv .Btn__02 {
   position: absolute;
-  bottom: 5rem;
+  bottom: -3rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 100;
 }
 
 .Regret {
   background-color: #F1EFE9;
-  padding: 5rem 0 20rem 0;
+  padding: 15rem 0 20rem 0;
   position: relative;
 }
 .Regret::before {
@@ -469,7 +505,7 @@ body {
   background: url(../images/white_tri.png) no-repeat center bottom/contain;
 }
 .Regret__container {
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 .Regret__container .Title {
   margin-bottom: 8rem;
@@ -485,7 +521,7 @@ body {
   margin-bottom: 4rem;
 }
 .Regret__container__wrap .Item__title span {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   line-height: 4.1rem;
   font-weight: 500;
   text-align: center;
@@ -510,7 +546,7 @@ body {
 
 .Solution {
   position: relative;
-  padding-bottom: 20rem;
+  padding-bottom: 11rem;
 }
 .Solution::before {
   content: "";
@@ -527,23 +563,24 @@ body {
   padding-bottom: 20rem;
 }
 .Solution__container .Title {
-  margin-bottom: 12rem;
+  margin-bottom: 9rem;
 }
 .Solution__container__wrap {
   margin-bottom: 15rem;
 }
 .Solution__container__wrap .Item {
   display: flex;
+  align-items: center;
   margin-bottom: 8rem;
 }
 .Solution__container__wrap .Item__left {
-  width: 25%;
+  width: 27%;
 }
 .Solution__container__wrap .Item__left img {
   width: 100%;
 }
 .Solution__container__wrap .Item__right {
-  width: 75%;
+  width: 73%;
   padding-left: 3%;
   box-sizing: border-box;
 }
@@ -585,17 +622,19 @@ body {
   background: url(../images/white_tow.png) no-repeat center bottom/contain;
 }
 .Point__container {
-  padding-bottom: 15rem;
+  padding-bottom: 12rem;
 }
 .Point__container .Title {
   margin-bottom: 5rem;
+  margin-top: -2rem;
 }
 .Point__container__wrap {
-  margin-bottom: 15rem;
+  margin-bottom: 17rem;
 }
 .Point__container__wrap .Item {
   display: flex;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
+  align-items: center;
 }
 .Point__container__wrap .Item:nth-child(even) {
   flex-direction: row-reverse;
@@ -606,16 +645,16 @@ body {
   text-align: right;
 }
 .Point__container__wrap .Item__img {
-  width: 25%;
+  width: 27%;
 }
 .Point__container__wrap .Item__img img {
   width: 100%;
 }
 .Point__container__wrap .Item__text {
-  width: 75%;
-  padding-left: 5%;
+  width: 73%;
+  padding-left: 3%;
   box-sizing: border-box;
-  margin-top: 8rem;
+  margin-top: 9rem;
 }
 .Point__container__wrap .Item__text__title {
   font-size: 2.8rem;
@@ -627,19 +666,20 @@ body {
   text-align: center;
   background: linear-gradient(transparent 50%, rgba(85, 149, 186, 0.6) 50%);
   display: inline-block;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .Point__container__wrap .Item__text__dis {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 4.1rem;
+  letter-spacing: 0.3rem;
 }
 .Point .Title__blue {
-  margin-bottom: 13rem;
+  margin-bottom: 14rem;
 }
 
 .Plan {
-  padding-top: 10rem;
+  padding-top: 9rem;
   padding-bottom: 20rem;
   position: relative;
 }
@@ -655,10 +695,13 @@ body {
   background: url(../images/gray_tri.png) no-repeat center bottom/contain;
 }
 .Plan__container {
-  padding-bottom: 15rem;
+  padding-bottom: 12rem;
+  max-width: 111.5rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .Plan__container .Title {
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 .Plan__container__wrap {
   margin-bottom: 15rem;
@@ -667,28 +710,29 @@ body {
   margin-bottom: 5rem;
   display: flex;
   background-color: #F1EFE9;
-  border-radius: 5rem;
+  border-radius: 6rem;
   position: relative;
 }
 .Plan__container__wrap .Item::before {
   content: "";
   display: block;
   position: absolute;
-  right: 10rem;
-  top: 3rem;
+  right: 13rem;
+  top: 2rem;
   width: 20rem;
   height: 20rem;
   background: url(../images/olan_acc.png) no-repeat center/contain;
 }
 .Plan__container__wrap .Item__img {
-  width: 30%;
+  width: 28%;
 }
 .Plan__container__wrap .Item__img img {
   width: 100%;
 }
 .Plan__container__wrap .Item__text {
-  width: 70%;
-  padding: 8rem 0 0 3rem;
+  width: 72%;
+  padding: 7rem 0 0 4rem;
+  box-sizing: border-box;
 }
 .Plan__container__wrap .Item__text__title {
   margin-bottom: 2rem;
@@ -709,7 +753,7 @@ body {
   line-height: 4.1rem;
 }
 .Plan__container .Title__blue {
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
 }
 
 .Voice {
@@ -729,47 +773,57 @@ body {
   background: url(../images/white_tri.png) no-repeat center bottom/contain;
 }
 .Voice__container {
-  padding-bottom: 20rem;
+  padding-bottom: 14rem;
 }
 .Voice__container .Title {
   margin-bottom: 10rem;
+  margin-top: -1rem;
 }
 .Voice__container__wrap {
-  display: flex;
-  max-width: 100rem;
+  max-width: 115rem;
   margin: 0 auto;
   width: 100%;
 }
 .Voice__container__wrap .Item {
-  width: calc(50% - 6rem);
-  margin: 0 3rem;
-  margin-top: 5rem;
+  width: 100%;
+  margin-bottom: 15rem;
   background-color: #fff;
-  border-radius: 2rem;
-  padding: 3rem;
+  border-radius: 3rem;
+  padding: 5rem 8rem;
+  box-sizing: border-box;
+}
+.Voice__container__wrap .Item:last-of-type {
+  margin-bottom: 0;
 }
 .Voice__container__wrap .Item__head {
-  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 .Voice__container__wrap .Item__head__img {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: -8rem;
+  width: 28rem;
+  margin-right: 5rem;
+  margin-top: -11rem;
 }
 .Voice__container__wrap .Item__head__img img {
   width: 100%;
 }
-.Voice__container__wrap .Item__head__name {
-  text-align: right;
-  font-size: 2.5rem;
-  font-weight: 500;
+.Voice__container__wrap .Item__head__text {
+  margin-bottom: 2rem;
 }
-.Voice__container__wrap .Item__food__ttl {
+.Voice__container__wrap .Item__head__text__ttl {
   font-size: 2.6rem;
   font-weight: bold;
   line-height: 4.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
+  padding-bottom: 1rem;
+}
+.Voice__container__wrap .Item__head__text__name {
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-right: 6rem;
+  margin-top: -2rem;
 }
 .Voice__container__wrap .Item__food__dis {
   font-size: 2.5rem;
@@ -793,10 +847,15 @@ body {
   background: url(../images/gray_tow.png) no-repeat center bottom/contain;
 }
 .Step__container {
-  padding-bottom: 10rem;
+  padding-bottom: 4rem;
 }
 .Step__container .Title {
-  margin-bottom: 15rem;
+  margin-bottom: 12rem;
+}
+.Step__container__wrap {
+  max-width: 150rem;
+  width: 100%;
+  margin: 0 auto;
 }
 .Step__container__wrap__content {
   display: flex;
@@ -811,19 +870,19 @@ body {
   margin-bottom: 10rem;
 }
 .Step__container__wrap__content .Item {
-  width: 20rem;
+  width: 16%;
   background-color: rgba(85, 149, 186, 0.3);
   position: relative;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 8rem 2rem 2rem 2rem;
   border-radius: 2rem;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
 .Step__container__wrap__content .Item__number {
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
   position: absolute;
   background: #000;
   border-radius: 50%;
@@ -845,11 +904,15 @@ body {
   color: #fff;
 }
 .Step__container__wrap__content .Item__title {
-  font-size: 2.3rem;
-  line-height: 7.5rem;
+  font-size: 1.7rem;
+  line-height: 2rem;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Step__container__wrap__content .Item__img {
   margin-bottom: 2rem;
@@ -865,7 +928,7 @@ body {
 
 .Fqa {
   background-color: #F1EFE9;
-  padding: 10rem 0 30rem 0;
+  padding: 10rem 0 25rem 0;
   position: relative;
 }
 .Fqa::before {
@@ -1051,7 +1114,7 @@ body {
   background-color: #45a049;
 }
 .Contact__container__content .Btn {
-  margin-top: 15rem;
+  margin-top: 8rem;
 }
 .Contact__container__box {
   background-color: #F1EFE9;

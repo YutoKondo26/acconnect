@@ -18,11 +18,14 @@
         background: url(../images/gray_tow.png) no-repeat center bottom/contain;
     }
     &__container{
-        padding-bottom: 10rem;
+        padding-bottom: 4rem;
         .Title{
-            margin-bottom: 15rem;
+            margin-bottom: 12rem;
         }
         &__wrap{
+            max-width: 150rem;
+            width: 100%;
+            margin: 0 auto;
             &__content{
                 display: flex;
                 flex-wrap: wrap;
@@ -36,19 +39,24 @@
                 }
 
                 .Item{
-                    width: 20rem;
+                    // width: 22rem;
+                    width: 16%;
+                    @media screen and (min-width:1800px) {
+                        // width: 19rem;
+         
+                    }
                     background-color: rgba($color: #5595BA, $alpha: 0.3);
                     position: relative;
-                    padding: 3rem 2rem 2rem 2rem;
+                    padding: 8rem 2rem 2rem 2rem;
                     border-radius: 2rem;
                     position: relative;
 
-                    margin-bottom: 10rem;
+                    margin-bottom: 7rem;
                     &__number{
                         position: absolute;
                         top: 0;
                         left: 50%;
-                        transform: translate(-50%,-50%);
+                        transform: translate(-50%,-20%);
                         position: absolute;
                         background: #000;
                         border-radius: 50%;
@@ -76,11 +84,15 @@
                         }
                     }
                     &__title{
-                        font-size: 2.3rem;
-                        line-height: 7.5rem;
+                        font-size: 1.7rem;
+                        line-height: 2rem;
                         font-weight: 500;
                         text-align: center;
-                        margin-bottom: 2rem;
+                        margin-bottom: 1rem;
+                        height: 4rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 
                     }
                     &__img{

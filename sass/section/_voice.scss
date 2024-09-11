@@ -20,52 +20,72 @@
         background: url(../images/white_tri.png) no-repeat center bottom/contain;
     }
     &__container{
-        padding-bottom: 20rem;
+        padding-bottom: 14rem;
+
         .Title{
             margin-bottom: 10rem;
+            margin-top: -1rem;
         }
         &__wrap{
-            display: flex;
-            max-width: 100rem;
+            // display: flex;
+            max-width: 115rem;
             margin: 0 auto;
             width: 100%;
             
             .Item{
-                width: calc(50% - 6rem);
-                margin: 0 3rem;
-                margin-top: 5rem;
+                width: 100%;
+                margin-bottom: 15rem;
 
                 background-color: #fff;
-                border-radius: 2rem;
-                padding: 3rem;
+                border-radius: 3rem;
+                padding: 5rem 8rem;
+                box-sizing: border-box;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
                 &__head{
                     // position: relative;
-                    margin-bottom: 3rem;
+                    // margin-bottom: 4rem;/
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 5rem;
                     &__img{
-                        width: 80%;
-                        margin: 0 auto;
-                        margin-top: -8rem;
+
+                        width: 28rem;
+                        // margin: 0 auto;
+                        // margin-top: -8rem;
+                        margin-right: 5rem;
+                        margin-top: -11rem;
                         
                         img{
                             width: 100%;
                         }
                     }
-                    &__name{
-                        text-align: right;
-                        font-size: 2.5rem;
-                        font-weight: 500;
+                    &__text{
+                        margin-bottom: 2rem;
+                        &__ttl{
+                            font-size: 2.6rem;
+                            font-weight: bold;
+                            line-height: 4.4rem;
+                            margin-bottom: 3rem;
+                            text-align: center;
 
+                            // margin-bottom: 2rem;
+                            padding-bottom: 1rem;
+
+                        }
+                        &__name{
+                            // text-align: right;
+                            font-size: 2.5rem;
+                            font-weight: 500;
+                            padding-right: 6rem;
+                            margin-top: -2rem;
+    
+                        }
                     }
                 }
                 &__food{
-                    &__ttl{
-                        font-size: 2.6rem;
-                        font-weight: bold;
-                        line-height: 4.4rem;
-                        margin-bottom: 2rem;
-                        text-align: center;
-
-                    }
+      
                     &__dis{
                         font-size: 2.5rem;
                         line-height: 4.1rem;
