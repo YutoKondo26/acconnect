@@ -18,6 +18,29 @@
             }
         }
         &__btn{
+            display: flex;
+            align-items: center;
+            .Tel{
+                font-size: 4rem;
+                color: black;
+                text-decoration: none;
+                font-weight: bold;
+                position: relative;
+                margin-right: 4rem;
+                &::before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: -6rem;
+                    padding-left: 2rem;
+                    transform: translateY(-50%);
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    // background-color: red;
+                    background: url(../images/tel_icon.png) no-repeat center/contain;
+                }
+            }
             .Btn__01{
           
                 a{

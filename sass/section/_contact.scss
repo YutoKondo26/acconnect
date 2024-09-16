@@ -1,5 +1,6 @@
 .Contact{
     padding: 0 0 18rem 0;
+    background-color: #F1EFE9;
     &__container{
         .Title{
             margin-bottom: 5rem;
@@ -80,9 +81,9 @@
                 border: 1px solid #8B8B8B;
 
             }
-            select[name="first_choice_time"],
-            select[name="second_choice_time"],
-            select[name="third_choice_time"]{
+            select[name="第一希望時間"],
+            select[name="第二希望時間"],
+            select[name="第三希望時間"]{
                 width: 20rem;
                 display: block;
                 border: 1px solid #8B8B8B;
@@ -123,9 +124,11 @@
         }
 
         &__box{
-            background-color: #F1EFE9;
-            padding: 3rem 12rem;
+            background-color: #fff;
+            padding: 5rem 12rem;
             margin-top: 15rem;
+            height: 20rem;
+            overflow-y: scroll;
             &__inner{
                 position: relative;
                 &::before{

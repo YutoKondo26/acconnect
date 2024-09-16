@@ -441,6 +441,30 @@ body {
 .Header__container__logo img {
   width: 100%;
 }
+.Header__container__btn {
+  display: flex;
+  align-items: center;
+}
+.Header__container__btn .Tel {
+  font-size: 4rem;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  margin-right: 4rem;
+}
+.Header__container__btn .Tel::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -6rem;
+  padding-left: 2rem;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  background: url(../images/tel_icon.png) no-repeat center/contain;
+}
 .Header__container__btn .Btn__01 a {
   width: 30rem;
   height: 6rem;
@@ -867,7 +891,7 @@ body {
   width: 2.9rem;
   height: 2.9rem;
   margin: 0 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 .Step__container__wrap__content .Item {
   width: 16%;
@@ -877,6 +901,17 @@ body {
   border-radius: 2rem;
   position: relative;
   margin-bottom: 7rem;
+}
+.Step__container__wrap__content .Item__allow::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 47%;
+  left: -3.5rem;
+  transform: translateY(-50%);
+  width: 3.1rem;
+  height: 3.1rem;
+  background: url(../images/step_allow.png) no-repeat center/contain;
 }
 .Step__container__wrap__content .Item__number {
   position: absolute;
@@ -1011,8 +1046,48 @@ body {
   font-weight: 500;
 }
 
+.Access {
+  padding-bottom: 25rem;
+  position: relative;
+}
+.Access::before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 20rem;
+  background: url(../images/gray_tri.png) no-repeat center bottom/contain;
+}
+.Access__container {
+  padding-bottom: 10rem;
+}
+.Access__container .Title {
+  margin-bottom: 8rem;
+}
+.Access__container__content__map {
+  position: relative;
+  margin-bottom: 3rem;
+}
+.Access__container__content__map iframe {
+  width: 100%;
+  height: 60rem;
+}
+.Access__container__content__text {
+  max-width: 80rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.Access__container__content__text p {
+  font-size: 2.5rem;
+  line-height: 4rem;
+}
+
 .Contact {
   padding: 0 0 18rem 0;
+  background-color: #F1EFE9;
 }
 .Contact__container .Title {
   margin-bottom: 5rem;
@@ -1080,9 +1155,9 @@ body {
   margin-right: 2rem;
   border: 1px solid #8B8B8B;
 }
-.Contact__container__content select[name=first_choice_time],
-.Contact__container__content select[name=second_choice_time],
-.Contact__container__content select[name=third_choice_time] {
+.Contact__container__content select[name=第一希望時間],
+.Contact__container__content select[name=第二希望時間],
+.Contact__container__content select[name=第三希望時間] {
   width: 20rem;
   display: block;
   border: 1px solid #8B8B8B;
@@ -1117,9 +1192,11 @@ body {
   margin-top: 8rem;
 }
 .Contact__container__box {
-  background-color: #F1EFE9;
-  padding: 3rem 12rem;
+  background-color: #fff;
+  padding: 5rem 12rem;
   margin-top: 15rem;
+  height: 20rem;
+  overflow-y: scroll;
 }
 .Contact__container__box__inner {
   position: relative;
@@ -1147,5 +1224,21 @@ body {
   color: #fff;
   font-weight: 400;
   font-size: 2rem;
+  text-align: center;
+}
+
+.Thanks__container {
+  padding: 30rem 0;
+}
+.Thanks__container h2 {
+  font-size: 5rem;
+  margin-bottom: 8rem;
+  font-weight: bold;
+  text-align: center;
+}
+.Thanks__container p {
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  margin-bottom: 12rem;
   text-align: center;
 }
